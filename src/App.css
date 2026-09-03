@@ -1,0 +1,28 @@
+:root { --ink:#111; --paper:#f8f7f2; --line:#e8e6df; --blue:#a9c7ec; --orange:#ee642f; --yellow:#f5d978; --green:#a8ca78; }
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { margin:0; background:#fff; color:var(--ink); font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; -webkit-font-smoothing:antialiased; }
+button,a { color:inherit; font:inherit; }
+button { border:0; }
+a { text-decoration:none; }
+.site { min-height:100svh; background:#fff; }
+.site-header { width:min(1320px,calc(100% - 48px)); height:92px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; }
+.wordmark { padding:0; background:transparent; cursor:pointer; font-size:30px; line-height:1; font-weight:950; letter-spacing:-.09em; font-style:italic; transform:rotate(-4deg); }
+.email-pill { padding:11px 18px; border-radius:999px; background:#111; color:#fff; font-size:13px; font-weight:650; transition:transform .2s,background .2s; }
+.email-pill:hover { transform:translateY(-2px); background:#ee642f; }
+.page-shell { width:min(1320px,calc(100% - 48px)); margin:0 auto; }
+.page-tabs { display:flex; align-items:center; justify-content:center; flex-wrap:wrap; gap:10px; margin:42px 0 52px; }
+.page-tabs button,.page-tabs a { padding:8px 15px; border:1px solid #e9e6dd; border-radius:999px; background:#f8f7f2; font-size:13px; cursor:pointer; box-shadow:0 2px 5px rgba(20,20,20,.04); transition:.2s; }
+.page-tabs button:hover,.page-tabs button.active,.page-tabs a:hover { background:#111; color:#fff; border-color:#111; transform:translateY(-2px); }
+.section-kicker { margin:0 0 16px; font-size:11px; font-weight:800; letter-spacing:.13em; text-transform:uppercase; }
+.site-footer { width:min(1320px,calc(100% - 48px)); margin:90px auto 0; padding:25px 0 35px; border-top:1px solid var(--line); display:flex; justify-content:space-between; color:#777; font-size:12px; }
+.site-footer button { padding:0; border:0; background:transparent; color:#111; font-weight:650; cursor:pointer; }
+
+@media (max-width:700px) {
+  .site-header,.page-shell,.site-footer { width:calc(100% - 28px); }
+  .site-header { height:74px; }.wordmark { font-size:25px; }.email-pill { padding:9px 13px; font-size:11px; }
+  .page-tabs { justify-content:flex-start; overflow-x:auto; flex-wrap:nowrap; margin:28px 0 32px; padding-bottom:4px; scrollbar-width:none; }
+  .page-tabs button,.page-tabs a { white-space:nowrap; }.site-footer { gap:14px; flex-wrap:wrap; margin-top:55px; }
+}
+
+@media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } *,*::before,*::after { transition:none!important; } }
