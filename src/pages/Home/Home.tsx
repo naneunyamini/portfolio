@@ -12,11 +12,11 @@ export default function Home({ navigate }: { navigate: Navigate }) {
         />
         <div className="profile-copy">
           <h1>박지민</h1>
-          <strong>Frontend Developer</strong>
+          <strong>Education Service PM</strong>
           <p>
-            사용하기 편하고 오래 유지되는 웹을 만듭니다.
+            사용하기 편하고 오래 운영될 수 있는 서비스를 기획하고 구현합니다.
             <br />
-            작은 디테일을 놓치지 않는 신입 개발자입니다.
+            작은 불편을 놓치지 않고, 기획과 개발을 연결하는 서비스 기획자입니다.
           </p>
         </div>
       </section>
@@ -50,6 +50,7 @@ export default function Home({ navigate }: { navigate: Navigate }) {
             <b>문제 정의</b>
             <b>UX 설계</b>
             <b>근거 기반</b>
+            <b>기획</b>
             <b>실행력</b>
             <b>관찰</b>
             <b>맥락 이해</b>
